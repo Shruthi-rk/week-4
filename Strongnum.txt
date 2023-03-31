@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Strong
+  {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      System.out.println("Enter number to check strong number or not");
+      int n=s.nextInt();
+      int temp=n,sum=0,rem=0,fact=0;
+      while(temp!=0)
+        {
+          rem=temp%10;
+          fact=1;
+          for(int i=1;i<=rem;i++)
+            {
+              fact=fact*i;
+            }
+          sum=sum+fact;
+          temp=temp/10;
+        }
+      if(sum==n)
+      {
+        System.out.println("It is a strong number");
+      }
+      else
+      {
+        System.out.println("it is not a strong number");
+      }
+    }
+  }
