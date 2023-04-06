@@ -1,0 +1,12 @@
+import java.util.Scanner;
+   class Strtoint
+  {
+    public static void main(String args[]) 
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the String ");
+        String str =s.nextLine();
+        int n=Integer.valueOf(str);
+        System.out.println(n);
+    }
+  }
