@@ -1,0 +1,30 @@
+import java.util.Scanner;
+  public class PaliString
+  {
+    public static void main(String args[]) 
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the String ");
+        String str =s.nextLine();
+        char a[]=str.toCharArray();
+        int count=0;
+          for(int i=0;i<a.length;i++)
+          {
+            if(a[i]==a[a.length-(i+1)])
+            {
+              count=1;
+            }
+            else
+            {
+              count=0;
+            }
+          }
+        if(count>=1)
+        {
+          System.out.println("Its a palindrome");
+        }
+      else{
+        System.out.println("Its not  a palindrome");
+      }
+    }
+  }
